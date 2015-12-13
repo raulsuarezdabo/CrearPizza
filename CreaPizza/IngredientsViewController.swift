@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IngredientsViewController.swift
 //  CreaPizza
 //
 //  Created by Raul Suarez Dabo on 13/12/15.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IngredientsViewController: UIViewController {
+    
+    var miPizza: Pizza?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,10 +23,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let nextView = segue.destinationViewController as! SizePizzaViewController
-        nextView.miPizza = Pizza()
-    }
-
 }
-
